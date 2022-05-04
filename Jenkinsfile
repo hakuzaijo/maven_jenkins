@@ -3,7 +3,7 @@ pipeline {
   stages {
   stage('maven install') {
     steps {
-      withMaven(globalMavenSettingsConfig: 'null', jdk: 'JDK', maven: 'MAVEN_MARCIN', mavenSettingsConfig: 'C:\Users\mio\.jenkins\workspace\testMavenPipeline')  {
+      withMaven(globalMavenSettingsConfig: 'null', jdk: 'JDK', maven: 'MAVEN_MARCIN', mavenSettingsConfig: 'null')  {
     sh 'mvn clean install' 
 }
     }
